@@ -1,0 +1,32 @@
+model_config_list {
+  config {
+    name: 'basemodel'
+    base_path: '/home/enyi/Open-Set-Audio-Classification/backend/models/basemodel-known.model'
+    model_platform: 'tensorflow'
+  }
+  config {
+    name: 'ovr0'
+    base_path: '/home/enyi/Open-Set-Audio-Classification/backend/models/ovr-norm0.model'
+    model_platform: 'tensorflow'
+  }
+  config {
+    name: 'ovr1'
+    base_path: '/home/enyi/Open-Set-Audio-Classification/backend/models/ovr-norm1.model'
+    model_platform: 'tensorflow'
+  }
+  config {
+    name: 'ovr2'
+    base_path: '/home/enyi/Open-Set-Audio-Classification/backend/models/ovr-norm2.model'
+    model_platform: 'tensorflow'
+  }
+  config {
+    name: 'ovr3'
+    base_path: '/home/enyi/Open-Set-Audio-Classification/backend/models/ovr-norm3.model'
+    model_platform: 'tensorflow'
+  }
+  config {
+    name: 'ovr4'
+    base_path: '/home/enyi/Open-Set-Audio-Classification/backend/models/ovr-norm4.model'
+    model_platform: 'tensorflow'
+  }
+}

@@ -20,6 +20,10 @@ class App extends React.Component {
   onClickHandler = () => {
     const data = new FormData();
     data.append("audio_file", this.state.selectedFile);
+    axios.post("http://localhost:5000/predict", data).then((res) => {
+      console.log(res);
+      console.log(res.statusText);
+    });
     axios.post("http://localhost:5000/predict_mod", data).then((res) => {
       console.log(res);
       console.log(res.statusText);
