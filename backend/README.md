@@ -1,3 +1,5 @@
+Add in models folder, vggish_model.ckpt and vggish_pca_params.npz to the backend directory
+
 Add execution permissions to install.sh and model_server.sh with ```sudo chmod +x install.sh model_server.sh```
 
 Install apt packages with ```./install.sh```
