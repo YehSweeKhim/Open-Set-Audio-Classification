@@ -5,28 +5,77 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: auto;
 }
 
-.Zero {
-  margin: 0px;
-  padding: 0px;
+.Header {
+  margin-top: 30px;
 }
 
 .Description {
   text-align: justify;
-  padding: 0px 30px;
+  padding: 0px 100px;
 }
 
-.Spacer {
-  height: 100%;
+#Display {
+  position: relative;
+  z-index: 9;
+  background-color: #fbf2e7;
+  color: black;
+  border-radius: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px; 
+}
+
+#Display:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 68%;
+  bottom: 0;
+  left: 0;
+  background: white;
+  border-radius: 12px;
 }
 
 .Row {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-around;
-  width: 100vw;
+}
+
+.Classes {
+  padding-left: 20px;
+}
+
+#Insert {
+  margin-left: 100px;
+}
+
+.File {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.Classify {
+  background-color: #4caf50;
+  padding: 10px;
+  margin-right: 30px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.Classify:hover {
+  background-color: #7fff00;
+}
+
+.Result {
+  margin-bottom: 100px;
 }
 
 .App-logo {
