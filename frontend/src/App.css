@@ -68,6 +68,7 @@
   margin-right: 30px;
   border-radius: 12px;
   font-weight: bold;
+  outline: none;
 }
 
 .Classify:hover {

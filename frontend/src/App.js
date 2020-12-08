@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import axios from "axios";
-import ReactAudioPlayer from "react-audio-player";
 
 class App extends React.Component {
   constructor(props) {
@@ -18,25 +17,6 @@ class App extends React.Component {
       selectedFile: event.target.files[0],
       loaded: 0,
     });
-    this.audio = new Audio("sounds/beep.wav");
-    this.audio.load();
-    // this.playAudio();
-  };
-
-  start = () => {
-    if (this.audio !== undefined) {
-      const audioPromise = this.audio.play();
-      if (audioPromise !== undefined) {
-        audioPromise
-          .then((_) => {
-            // autoplay started
-          })
-          .catch((err) => {
-            // catch dom exception
-            console.info(err);
-          });
-      }
-    }
   };
 
   onClickHandler = () => {
@@ -138,8 +118,6 @@ class App extends React.Component {
           <div id="Insert" className="Col">
             <div className="row">
               <h4 className="col">Pick an audio file!☺️</h4>
-              {/* <ReactAudioPlayer src={this.state.selectedFile} autoPlay controls /> */}
-              {/* <button className="col" onClick={this.start}>Play</button> */}
             </div>
             <div className="row">
               <input
@@ -155,8 +133,8 @@ class App extends React.Component {
             {this.fileData()}
           </div>
         </div>
-        <div className="Result">
-          <h2>OUR PREDICTION:</h2>
+        <div className="Result" >
+          <h1 style={{marginBottom:"50px"}}>OUR PREDICTION:</h1>
           {this.results()}</div>
       </div>
     );
