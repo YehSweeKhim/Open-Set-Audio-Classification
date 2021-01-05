@@ -33,4 +33,4 @@ We chose a model with state-of-the-art performance on the UrbanSound8K dataset f
 ## Simple Web Application
 Predict audio files using our state-of-the-art model (OSR) vs base model (CSR)
 
-![Web Application](/images/web_app.jpg)
+![Web Application](/image/web_app.jpg)
